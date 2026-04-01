@@ -1,0 +1,209 @@
+.spotify{
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #aabf99; 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.spotify iframe {
+  border-radius: 20px;
+  opacity: 0.9; 
+}
+
+
+/* faltu ka shit for each page */
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Kings&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+Mono:wght@100..900&family=Quintessential&family=Schoolbell&family=Uncial+Antiqua&family=Unica+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{       
+    margin: 0 ; 
+    background-image: url("../0. Archive/_.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+    color: white;
+}
+
+.Logo{
+    font-family:Uncial Antiqua, sans-serif;
+    font-size: 50px;
+    color:#97e5f3;
+    text-shadow: #fefae0 2px 2px 2px 2px
+}
+
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+
+.nav-links a {
+  float: left;
+  color: #fefae0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'IM Fell English SC', serif;
+}
+
+
+.nav-links a:hover {
+  background-color: transparent;
+  color: #94d2bdde;
+}
+
+
+.nav-links a.active {
+  background-color: transparent;
+  color: #94d2bdde;
+}
+
+
+.content {
+    height: 200vh; 
+    color: white;
+    padding: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #fefae0;
+    font-size: 30px;
+    font-family: 'Jim Nightshade', serif;
+}
+
+a:hover{
+    color: #94d2bdde;
+}
+
+/* main */
+#pg1 {
+  display: grid;
+  grid-template-columns: 28% 40% 28%;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2%;
+  padding: 20px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.glass-panel {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  color: #a4ce74;
+  font-family: 'Noto Sans Mono', monospace;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+.glass-panel h2, .glass-panel h3 {
+  color: #a4ce74;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  color: #a4ce74;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.visionboard.glass-panel {
+  background: rgba(30, 30, 30, 0.8); 
+
+
+.bullitin {
+  background: #d4a373; 
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bullitin h2 {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Noto Sans Mono', monospace;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.bulletin-items {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.sticky-note {
+  background: #fdf6e3;
+  color: #000;
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  font-family: 'Schoolbell', cursive; 
+  font-size: 14px;
+  text-align: center;
+  flex: 1;
+  min-height: 120px;
+}
+.sticky-note.lines {
+  background-image: repeating-linear-gradient(transparent, transparent 19px, #ccc 19px, #ccc 20px);
+  background-color: #fff;
+  background-position: 0 5px;
+}
+
+/* apod */
+.apod {
+  text-align: center;
+  color: #a4ce74;
+}
+
+.apod .card {
+  width: 100%;
+}
+
+.apod h2, .apod h1 {
+  color: #a4ce74;
+}
+
+#apod-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+#description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a4ce74;
+}
