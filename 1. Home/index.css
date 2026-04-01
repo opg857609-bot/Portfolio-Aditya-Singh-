@@ -140,7 +140,7 @@ a:hover{
 
 .visionboard.glass-panel {
   background: rgba(30, 30, 30, 0.8); 
-
+}
 
 .bullitin {
   background: #d4a373; 
@@ -206,4 +206,5 @@ a:hover{
   font-size: 14px;
   line-height: 1.5;
   color: #a4ce74;
+  text-align: justify;
 }
