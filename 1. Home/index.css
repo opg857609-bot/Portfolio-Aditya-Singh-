@@ -1,55 +1,61 @@
-.spotify{
+.spotify {
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
 
-  background: #aabf99; 
+  background: #aabf99;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .spotify iframe {
   border-radius: 20px;
-  opacity: 0.9; 
+  opacity: 0.9;
 }
 
 
 /* faltu ka shit for each page */
-@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Kings&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+Mono:wght@100..900&family=Quintessential&family=Schoolbell&family=Uncial+Antiqua&family=Unica+One&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
-body{       
-    margin: 0 ; 
-    background-image: url("../0. Archive/_.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+  margin: 0;
+  background-image: url("../0. Archive/_.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.headerr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: transparent;
-    color: white;
+.headerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: transparent;
+  color: white;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.Logo{
-    font-family:Uncial Antiqua, sans-serif;
-    font-size: 50px;
-    color:#97e5f3;
-    text-shadow: #fefae0 2px 2px 2px 2px
+.Logo {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 60px;
+  color: #c8e6a0;
+  text-shadow:
+    0 0 10px rgba(164, 206, 116, 0.8),
+    0 0 20px rgba(164, 206, 116, 0.5),
+    0 0 40px rgba(164, 206, 116, 0.3),
+    2px 2px 4px rgba(0, 0, 0, 0.9);
+  letter-spacing: 3px;
 }
 
 .topnav {
@@ -58,8 +64,13 @@ body{
 }
 
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
 .nav-links a {
-  float: left;
   color: #fefae0;
   text-align: center;
   padding: 14px 16px;
@@ -82,20 +93,20 @@ body{
 
 
 .content {
-    height: 200vh; 
-    color: white;
-    padding: 50px;
+  height: 200vh;
+  color: white;
+  padding: 50px;
 }
 
-a{
-    text-decoration: none;
-    color: #fefae0;
-    font-size: 30px;
-    font-family: 'Jim Nightshade', serif;
+a {
+  text-decoration: none;
+  color: #fefae0;
+  font-size: 30px;
+  font-family: 'Jim Nightshade', serif;
 }
 
-a:hover{
-    color: #94d2bdde;
+a:hover {
+  color: #94d2bdde;
 }
 
 /* main */
@@ -122,10 +133,11 @@ a:hover{
   padding: 20px;
   color: #a4ce74;
   font-family: 'Noto Sans Mono', monospace;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.glass-panel h2, .glass-panel h3 {
+.glass-panel h2,
+.glass-panel h3 {
   color: #a4ce74;
   text-align: center;
   margin-top: 0;
@@ -139,14 +151,16 @@ a:hover{
 }
 
 .visionboard.glass-panel {
-  background: rgba(30, 30, 30, 0.8); 
+  background: rgba(30, 30, 30, 0.8);
+  /* a bit lighter grey */
 }
 
+
 .bullitin {
-  background: #d4a373; 
+  background: #d4a373;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .bullitin h2 {
@@ -162,6 +176,8 @@ a:hover{
   display: flex;
   gap: 15px;
   justify-content: center;
+  flex-wrap: wrap;
+  /* Added for dynamic items */
 }
 
 .sticky-note {
@@ -169,20 +185,22 @@ a:hover{
   color: #000;
   padding: 15px;
   border-radius: 2px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  font-family: 'Schoolbell', cursive; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Schoolbell', cursive;
+  /* handwritten style */
   font-size: 14px;
   text-align: center;
   flex: 1;
   min-height: 120px;
 }
+
 .sticky-note.lines {
   background-image: repeating-linear-gradient(transparent, transparent 19px, #ccc 19px, #ccc 20px);
   background-color: #fff;
   background-position: 0 5px;
 }
 
-/* apod */
+
 .apod {
   text-align: center;
   color: #a4ce74;
@@ -192,7 +210,8 @@ a:hover{
   width: 100%;
 }
 
-.apod h2, .apod h1 {
+.apod h2,
+.apod h1 {
   color: #a4ce74;
 }
 
@@ -206,5 +225,121 @@ a:hover{
   font-size: 14px;
   line-height: 1.5;
   color: #a4ce74;
-  text-align: justify;
+}
+
+/* Theme Toggle */
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 14px;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.theme-btn:hover {
+  transform: scale(1.15);
+}
+
+
+body.light-mode {
+  background-image: url("../0. Archive/Blue Aesthetic Wallpapers Iphone.jpeg");
+  background-color: #f4ecdf;
+  color: #333;
+}
+
+body.light-mode .glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .glass-panel h2,
+body.light-mode .glass-panel h3,
+body.light-mode .intro-text p,
+body.light-mode .apod h2,
+body.light-mode .apod h1,
+body.light-mode #description {
+  color: #333;
+}
+
+body.light-mode .Logo {
+  color: #0d2e1f;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode a {
+  color: #1a4a38;
+}
+
+body.light-mode .nav-links a {
+  color: #1a4a38;
+}
+
+body.light-mode .nav-links a:hover {
+  color: #d4a373;
+}
+
+/* Bulletin Controls */
+.bulletin-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+#search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Noto Sans Mono', monospace;
+  width: 90%;
+  max-width: 300px;
+}
+
+.filter-sort-controls {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn,
+#sort-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #fdf6e3;
+  font-family: 'Noto Sans Mono', monospace;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn.active {
+  background: #a4ce74;
+  color: #000;
+}
+
+.like-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.like-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
 }

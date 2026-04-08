@@ -10,34 +10,34 @@
 
 <body>
 
-
-
     <div class="headerr">
         <div class="logo-container">
-            <h1 class="Logo">The Vortex</h1>
+            <h1 class="Logo">The Nexus</h1>
         </div>
         <div class="nav-container">
             <nav>
                 <div class="nav-links">
                     <a href="#">Home</a>
-                    <a href="#">Projects</a>
+                    <a href="#">Research</a>
                     <a href="#">Portfolio</a>
                     <a href="#">Notebook</a>
                     <a href="#">The List</a>
+                    <button id="theme-toggle" class="theme-btn">🌓</button>
                 </div>
             </nav>
         </div>
     </div>
 
-    <!-- main sec -->
+
     <main>
         <section id="pg1">
 
             <div class="column col-left">
                 <div class="intro-text glass-panel">
                     <img src="" alt="">
-                    <h3>Hi, I'm Aditya Singh</h3>
-                    <p>I'm a cs undergraduate student who is super into finance and space</p>
+                    <h3>Hi, I'm Aditya</h3>
+                    <p>I'm a cs undergraduate student who is super into theoretical physics, astrophysics,
+                        cosmology and the complimentary geek shit that comes with it.</p>
                 </div>
             </div>
 
@@ -45,21 +45,21 @@
             <div class="column col-middle">
                 <div class="bullitin">
                     <h2>[bulletin board]</h2>
-                    <div class="bulletin-items">
-                        <div class="sticky-note">
-                            <p>undercover out now</p>
+                    <div class="bulletin-controls">
+                        <input type="text" id="search-input" placeholder="Search notes...">
+                        <div class="filter-sort-controls">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="update">Updates</button>
+                            <button class="filter-btn" data-filter="misc">Misc</button>
+                            <button id="sort-btn">Sort: Newest</button>
                         </div>
-                        <div class="sticky-note lines">
-                            <p>stream limn plslsls **.*</p>
-                        </div>
-                        <div class="sticky-note">
-                            <p>misc pages :p</p>
-                        </div>
+                    </div>
+                    <div class="bulletin-items" id="dynamic-bulletin">
+
                     </div>
                 </div>
                 <div class="visionboard glass-panel">
-                    <h2>/microblog</h2>
-
+                    <h2>/visionboarddd</h2>
                     <img src="../0. Archive/_ (2).jpeg" alt="Vision Board" style="width: 100%; border-radius: 10px;">
                 </div>
             </div>
@@ -67,7 +67,8 @@
 
             <div class="column col-right">
                 <div class="spotify">
-                    <iframe src="https://open.spotify.com/playlist/7Ln6jCiJDZhhxecpmBpAyT?si=f3f8b670bbdf449b"
+                    <iframe
+                        src="https://open.spotify.com/embed/playlist/7Ln6jCiJDZhhxecpmBpAyT?utm_source=generator&theme=0"
                         width="100%" height="380" frameborder="0"
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                     </iframe>
@@ -90,6 +91,7 @@
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="index.js"></script>
 </body>
 
