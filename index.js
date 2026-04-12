@@ -1,7 +1,12 @@
 // apod
 
-const API_KEY = "0Rc53qoAojkukpykntI7wlLaPRsvYLuUE2DNmcQ5";
+const API_KEY = "pbwCItRE3l26sZVEbB17O7J6yGLppHVGjqlOf1iv";
 const url = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`;
+
+const titleEl = document.getElementById("title");
+if (titleEl) {
+  titleEl.textContent = "Fetching from NASA... 🌌";
+}
 
 fetch(url)
   .then((response) => {
@@ -27,6 +32,7 @@ fetch(url)
 
     if (data.media_type === "image") {
       image.src = data.url;
+      image.style.display = "block";
     } else {
       image.style.display = "none";
       document.querySelector(".card").innerHTML += `
@@ -42,7 +48,7 @@ fetch(url)
   });
 
 document.addEventListener("DOMContentLoaded", () => {
-  let notes = [
+  const defaultNotes = [
     {
       id: 1,
       text: "undercover out now",
@@ -72,6 +78,22 @@ document.addEventListener("DOMContentLoaded", () => {
       likes: 10,
     },
   ];
+
+  let notes = [];
+  const storedNotes = localStorage.getItem("vortex_notes");
+  if (storedNotes) {
+    try {
+      notes = JSON.parse(storedNotes);
+    } catch (e) {
+      notes = defaultNotes;
+    }
+  } else {
+    notes = defaultNotes;
+  }
+
+  function saveNotes() {
+    localStorage.setItem("vortex_notes", JSON.stringify(notes));
+  }
 
   let currentFilter = "all";
   let currentSort = "newest";
@@ -124,17 +146,30 @@ document.addEventListener("DOMContentLoaded", () => {
         const note = notes.find((n) => n.id === id);
         if (note) {
           note.likes++;
+          saveNotes();
           renderNotes();
         }
       });
     });
   }
 
+  function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        func.apply(this, args);
+      }, delay);
+    };
+  }
+
   if (searchInput) {
-    searchInput.addEventListener("input", (e) => {
+    const handleSearch = debounce((e) => {
       searchQuery = e.target.value;
       renderNotes();
-    });
+    }, 300);
+
+    searchInput.addEventListener("input", handleSearch);
 
     filterBtns.forEach((btn) => {
       btn.addEventListener("click", (e) => {
@@ -165,13 +200,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const themeToggleBtn = document.getElementById("theme-toggle");
+
+  const savedTheme = localStorage.getItem("vortex_theme");
+  if (savedTheme === "light") {
+    document.body.classList.add("light-mode");
+    if (themeToggleBtn) {
+      themeToggleBtn.textContent = "🌑";
+    }
+  } else {
+    if (themeToggleBtn) {
+      themeToggleBtn.textContent = "🌓";
+    }
+  }
+
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("light-mode");
       if (document.body.classList.contains("light-mode")) {
         themeToggleBtn.textContent = "🌑";
+        localStorage.setItem("vortex_theme", "light");
       } else {
         themeToggleBtn.textContent = "🌓";
+        localStorage.setItem("vortex_theme", "dark");
       }
     });
   }

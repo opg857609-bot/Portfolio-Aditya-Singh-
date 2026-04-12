@@ -29,13 +29,78 @@
     <main>
       <section id="pg1">
         <div class="column col-left">
-          <div class="intro-text glass-panel">
-            <h3>Hi, I'm Aditya</h3>
+          <div class="intro-text panel-dark">
+            <h3 class="pink-title">hello! (,,>-<,,)</h3>
             <p>
-              I'm a cs undergraduate student who is super into theoretical
-              physics, astrophysics, cosmology and the complimentary geek shit
-              that comes with it.
+              my name is aditya and i am a student! this site is littered with
+              my personal thoughts, unreleased snippets, so take a good look
+              around. i coded this website as a side project.
             </p>
+            <p>
+              will you explore or take the
+              <a href="#" class="pink-link">site map</a>?
+            </p>
+            <p>join my <a href="#" class="pink-link">discord</a></p>
+          </div>
+
+          <div class="chatbox-container panel-dark">
+            <h3 class="green-text">chatbox!</h3>
+            <div class="chatbox">
+              <div class="chat-msgs">
+                <div class="msg">
+                  <div class="msg-header">
+                    <span class="user">Eddie</span
+                    ><span class="time">2 days ago</span>
+                  </div>
+                  <p>
+                    Genuinely so so happy i found your site because it sounds so
+                    wonderful and gorgeous <3
+                  </p>
+                </div>
+                <div class="msg">
+                  <div class="msg-header">
+                    <span class="user">grace</span
+                    ><span class="time">22 hours ago</span>
+                  </div>
+                  <p>your site is ethereal im so glad i found you😭</p>
+                </div>
+              </div>
+              <div class="chat-input-area">
+                <div class="chat-header"><span>Cbox</span><span>⇱</span></div>
+                <input type="text" placeholder="name" class="chat-input" />
+                <input type="text" placeholder="message" class="chat-input" />
+              </div>
+            </div>
+          </div>
+
+          <div class="poll-container panel-dark">
+            <h4 class="green-text">what instrument do u play?</h4>
+            <div class="poll-options">
+              <label><input type="radio" name="inst" /> guitar</label>
+              <label><input type="radio" name="inst" /> keys</label>
+              <label><input type="radio" name="inst" /> bass</label>
+              <label><input type="radio" name="inst" /> drums</label>
+              <label><input type="radio" name="inst" /> other</label>
+            </div>
+            <div class="poll-actions">
+            </div>
+          </div>
+
+          <div class="spotify panel-bg">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/7Ln6jCiJDZhhxecpmBpAyT?utm_source=generator&theme=0"
+              width="100%"
+              height="300"
+              frameborder="0"
+              allow="
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                fullscreen;
+                picture-in-picture;
+              "
+            >
+            </iframe>
           </div>
         </div>
 
@@ -52,47 +117,51 @@
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="update">Updates</button>
                 <button class="filter-btn" data-filter="misc">Misc</button>
-                <button id="sort-btn">Sort: Newest</button>
+                <button id="sort-btn">Sort</button>
               </div>
             </div>
             <div class="bulletin-items" id="dynamic-bulletin"></div>
           </div>
-          <div class="visionboard glass-panel">
-            <h2>/visionboarddd</h2>
-            <img
-              src="assets/_ (2).jpeg"
-              alt="Vision Board"
-              style="width: 100%; border-radius: 10px"
-            />
+
+          <div class="webrings">
+            <div class="badge placeholder">webrings</div>
+            <div class="badge placeholder">girl zone</div>
+            <div class="badge placeholder">abandoned</div>
+            <div class="badge placeholder">free web</div>
+          </div>
+
+          <div class="microblog panel-mauve">
+            <h2 class="green-text">/microblog</h2>
+            <div class="microblog-content">
+              <p>
+                <span class="green-text">adityaonline 2026/04/10</span><br />
+                <span class="pink-text">update.</span> entry 4 is out now
+              </p>
+              <p>
+                this entry is about a playground fight, but really it's about
+                the struggle that i've felt between two cultures growing up...
+              </p>
+              <img
+                src="assets/_ (2).jpeg"
+                alt="Vision Board"
+                style="width: 100%; border-radius: 5px; margin-top: 10px"
+              />
+            </div>
           </div>
         </div>
 
         <div class="column col-right">
-          <div class="spotify">
-            <iframe
-              src="https://open.spotify.com/embed/playlist/7Ln6jCiJDZhhxecpmBpAyT?utm_source=generator&theme=0"
-              width="100%"
-              height="380"
-              frameborder="0"
-              allow="
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                fullscreen;
-                picture-in-picture;
-              "
-            >
-            </iframe>
-          </div>
-
-          <div class="last-section glass-panel">
-            <div class="apod">
-              <h1>🌌 Astronomy Picture of the Day</h1>
+          <div class="last-section crt-panel">
+            <div class="crt-header">
+              <span>#isotube</span>
+            </div>
+            <div class="apod crt-content">
+              <h1 class="green-text">🌌 Astronomy Picture of the Day</h1>
               <div class="card">
-                <h2 id="title"></h2>
-                <p id="date"></p>
+                <h2 id="title" class="green-text"></h2>
+                <p id="date" class="green-text"></p>
                 <img id="apod-image" src="" alt="APOD Image" />
-                <p id="description"></p>
+                <p id="description" class="green-text"></p>
               </div>
             </div>
           </div>
