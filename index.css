@@ -16,7 +16,6 @@
   opacity: 0.9;
 }
 
-
 /* faltu ka shit for each page */
 
 * {
@@ -25,10 +24,9 @@
   padding: 0;
 }
 
-
 body {
   margin: 0;
-  background-image: url("../0. Archive/_.jpeg");
+  background-image: url("assets/_.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +45,7 @@ body {
 }
 
 .Logo {
-  font-family: 'Uncial Antiqua', serif;
+  font-family: "Uncial Antiqua", serif;
   font-size: 60px;
   color: #c8e6a0;
   text-shadow:
@@ -63,7 +61,6 @@ body {
   overflow: hidden;
 }
 
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -76,21 +73,18 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
-  font-family: 'IM Fell English SC', serif;
+  font-family: "IM Fell English SC", serif;
 }
-
 
 .nav-links a:hover {
   background-color: transparent;
   color: #94d2bdde;
 }
 
-
 .nav-links a.active {
   background-color: transparent;
   color: #94d2bdde;
 }
-
 
 .content {
   height: 200vh;
@@ -102,7 +96,7 @@ a {
   text-decoration: none;
   color: #fefae0;
   font-size: 30px;
-  font-family: 'Jim Nightshade', serif;
+  font-family: "Jim Nightshade", serif;
 }
 
 a:hover {
@@ -132,7 +126,7 @@ a:hover {
   border-radius: 15px;
   padding: 20px;
   color: #a4ce74;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -155,7 +149,6 @@ a:hover {
   /* a bit lighter grey */
 }
 
-
 .bullitin {
   background: #d4a373;
   border-radius: 15px;
@@ -167,7 +160,7 @@ a:hover {
   color: #000;
   text-align: center;
   font-weight: bold;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   margin-top: 5px;
   margin-bottom: 20px;
 }
@@ -186,7 +179,7 @@ a:hover {
   padding: 15px;
   border-radius: 2px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  font-family: 'Schoolbell', cursive;
+  font-family: "Schoolbell", cursive;
   /* handwritten style */
   font-size: 14px;
   text-align: center;
@@ -195,11 +188,15 @@ a:hover {
 }
 
 .sticky-note.lines {
-  background-image: repeating-linear-gradient(transparent, transparent 19px, #ccc 19px, #ccc 20px);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 19px,
+    #ccc 19px,
+    #ccc 20px
+  );
   background-color: #fff;
   background-position: 0 5px;
 }
-
 
 .apod {
   text-align: center;
@@ -245,9 +242,8 @@ a:hover {
   transform: scale(1.15);
 }
 
-
 body.light-mode {
-  background-image: url("../0. Archive/Blue Aesthetic Wallpapers Iphone.jpeg");
+  background-image: none;
   background-color: #f4ecdf;
   color: #333;
 }
@@ -300,7 +296,7 @@ body.light-mode .nav-links a:hover {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   width: 90%;
   max-width: 300px;
 }
@@ -318,7 +314,7 @@ body.light-mode .nav-links a:hover {
   border: none;
   border-radius: 4px;
   background: #fdf6e3;
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   cursor: pointer;
   font-size: 12px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);

@@ -88,9 +88,9 @@ This project is not just about completing an assignment. It’s about building:
 
 📅 Timeline:
     Milestone 1: Planning & Structure ✅
-    Milestone 2: API Integration 🔄
-    Milestone 3: Interactivity ⏳
-    Final Submission: 10th April
+    Milestone 2: API Integration ✅
+    Milestone 3: Interactivity ✅
+    Final Submission: Complete 🎉
 
 🔮 Future Plans:
     Add blog-like tagging system
